@@ -11,9 +11,6 @@ public class AnimationController : MonoBehaviour
     [SerializeField] private float frameRate = 10f;
     [SerializeField] private bool loopAnimation = true;
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private Camera gameCamera;
-    [SerializeField] private bool cameraFollowEnabled = true;
-    [SerializeField] private float cameraFollowSpeed = 5f;
     
     private SpriteRenderer spriteRenderer;
     private Coroutine animationCoroutine;
@@ -21,7 +18,6 @@ public class AnimationController : MonoBehaviour
     private int currentFrameIndex = 0;
     private Sprite[] currentAnimationSprites;
     private bool isMoving = false;
-    private Vector3 cameraOffset;
     
     void Start()
     {
@@ -37,22 +33,16 @@ public class AnimationController : MonoBehaviour
             spriteRenderer.sprite = downAnimationSprites[0];
             currentAnimationSprites = downAnimationSprites;
         }
-        
-        if (gameCamera == null)
-        {
-            gameCamera = Camera.main;
-        }
-        
-        if (gameCamera != null)
-        {
-            cameraOffset = gameCamera.transform.position - transform.position;
-        }
     }
     
     void Update()
     {
         HandleMovement();
-        UpdateCameraFollow();
+        transform.rotation = Quaternion.identity;
+        
+        Vector3 pos = transform.position;
+        pos.y = 0f;
+        transform.position = pos;
     }
     
     private void HandleMovement()
@@ -62,7 +52,7 @@ public class AnimationController : MonoBehaviour
         
         if (Input.GetKey(KeyCode.W))
         {
-            movement.y += 1f;
+            movement.z += 1f;
             if (!isMoving || currentAnimationSprites != upAnimationSprites)
             {
                 PlayUp();
@@ -71,7 +61,7 @@ public class AnimationController : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            movement.y -= 1f;
+            movement.z -= 1f;
             if (!isMoving || currentAnimationSprites != downAnimationSprites)
             {
                 PlayDown();
@@ -110,27 +100,6 @@ public class AnimationController : MonoBehaviour
                 Stop();
                 isMoving = false;
             }
-        }
-    }
-    
-    private void UpdateCameraFollow()
-    {
-        if (!cameraFollowEnabled || gameCamera == null)
-            return;
-        
-        Vector3 targetPosition = transform.position + cameraOffset;
-        
-        if (cameraFollowSpeed <= 0f)
-        {
-            gameCamera.transform.position = targetPosition;
-        }
-        else
-        {
-            gameCamera.transform.position = Vector3.Lerp(
-                gameCamera.transform.position, 
-                targetPosition, 
-                cameraFollowSpeed * Time.deltaTime
-            );
         }
     }
     
@@ -273,32 +242,5 @@ public class AnimationController : MonoBehaviour
     public void SetMoveSpeed(float newMoveSpeed)
     {
         moveSpeed = Mathf.Max(0f, newMoveSpeed);
-    }
-    
-    public void SetCamera(Camera camera)
-    {
-        gameCamera = camera;
-        if (gameCamera != null)
-        {
-            cameraOffset = gameCamera.transform.position - transform.position;
-        }
-    }
-    
-    public void SetCameraFollowEnabled(bool enabled)
-    {
-        cameraFollowEnabled = enabled;
-    }
-    
-    public void SetCameraFollowSpeed(float speed)
-    {
-        cameraFollowSpeed = Mathf.Max(0f, speed);
-    }
-    
-    public void ResetCameraOffset()
-    {
-        if (gameCamera != null)
-        {
-            cameraOffset = gameCamera.transform.position - transform.position;
-        }
     }
 }
