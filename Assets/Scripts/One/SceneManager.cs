@@ -7,6 +7,8 @@ public class SceneManager : MonoBehaviour
     public GameObject currentPosition;
     public GameObject dialogManager;
 
+    private bool finalGoal = false;
+
     void Start()
     {
         if (dialogManager != null)
@@ -14,7 +16,10 @@ public class SceneManager : MonoBehaviour
             dialogManager dm = dialogManager.GetComponent<dialogManager>();
             if (dm != null)
             {
-                List<string> startDialogs = new List<string> { "你好", "世界" };
+                List<string> startDialogs = new List<string> { 
+                    "国王听说精灵的魔法能长生不老，但精灵除了让人开心，什么也不会", 
+                    "公主现在怎么样呢" 
+                };
                 dm.ShowDialog(startDialogs);
             }
         }

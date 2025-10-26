@@ -7,6 +7,8 @@ public class movePoint : MonoBehaviour
     public SceneManager sm;
     private GameObject sprite1;
     private GameObject sprite2;
+    public bool hideFirstSprite = true;
+
 
     void Start()
     {
@@ -31,18 +33,15 @@ public class movePoint : MonoBehaviour
         
     }
 
-    void OnMouseDown()
+    private void OnMouseDown()
     {
-        if (sm != null)
-        {
-            sm.UpdatePosition(gameObject);
-        }
+        sm.UpdatePosition(this.gameObject);
         Move();
     }
 
     public void Move()
     {
-        if (sprite1 != null)
+        if (sprite1 != null && hideFirstSprite)
         {
             sprite1.SetActive(false);
         }
