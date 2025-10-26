@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd"
->
-    
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.4);" />
+    <ui:VisualElement style="flex-grow: 1; position: absolute;" />
+    <ui:VisualElement style="flex-grow: 1; position: absolute;" />
+    <ui:VisualElement style="flex-grow: 1; position: absolute; bottom: 0; width: 80%; height: 40%; left: 10%; right: 10%; background-image: url(&quot;project://database/Assets/Arts/UI/InGame/%E5%BA%95%E9%83%A8%E5%AF%B9%E8%AF%9D%E6%A1%86.png?fileID=2800000&amp;guid=dfa4ec6653564e942a0d73795164d09d&amp;type=3#底部对话框&quot;);">
+        <ui:Label tabindex="-1" text="剧情文字剧情文字剧情文字剧情文字剧情文字剧情文字剧情文字剧情文字剧情文字" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DialogLabel" style="left: 20%; right: 20%; width: 60%; white-space: normal; top: 40%; color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+</ui:UXML>

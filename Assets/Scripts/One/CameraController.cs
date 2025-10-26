@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float yValue1 = -16.3f;
+    public float yValue2 = -0.4f;
+    public float yValue3 = 16.3f;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void SetPositionY1()
+    {
+        transform.position = new Vector3(transform.position.x, yValue1, transform.position.z);
+    }
+
+    public void SetPositionY2()
+    {
+        transform.position = new Vector3(transform.position.x, yValue2, transform.position.z);
+    }
+
+    public void SetPositionY3()
+    {
+        transform.position = new Vector3(transform.position.x, yValue3, transform.position.z);
     }
 }
