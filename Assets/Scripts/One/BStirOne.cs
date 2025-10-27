@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BPlaySprite : MonoBehaviour
+public class BStirOne : MonoBehaviour
 {
     public bool isFunc = true;
 
@@ -14,7 +14,7 @@ public class BPlaySprite : MonoBehaviour
             List<string> startDialogs;
             startDialogs = new List<string> {
                 "",
-                "精灵不会出精灵国，它们的魔法除了附在糖果上，没其它办法带走，但现在它们很久没吃到带快乐魔法的糖果了"
+                "糖果没有魔法是因为流水线上负责施展魔法的小精灵总是不快乐，没办法施展快乐魔法",
             };
             dm.ShowDialog(startDialogs);
         }

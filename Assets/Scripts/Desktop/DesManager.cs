@@ -4,13 +4,43 @@ using UnityEngine;
 
 public class DesManager : MonoBehaviour
 {
-    void Start()
+    public GameObject object1;
+    public GameObject object2;
+    public GameObject object3;
+    
+    public GameObject fade;
+    
+    private async void Start()
     {
-        
+        if (fade != null)
+        {
+            FadeEffect fadeEffect = fade.GetComponent<FadeEffect>();
+            if (fadeEffect != null)
+            {
+                await fadeEffect.FadeInAsync(1.0f);
+            }
+        }
+        Step1();
     }
 
-    void Update()
+    public void Step1()
     {
-        
+        object1.SetActive(true);
+        object2.SetActive(false);
+        object3.SetActive(false);
+    }
+
+    public void Step2()
+    {
+        object1.SetActive(false);
+        object2.SetActive(true);
+        object3.SetActive(false);
+    }
+
+    public void Step3()
+    {
+        object1.SetActive(false);
+        object2.SetActive(false);
+        object3.SetActive(true);
     }
 }

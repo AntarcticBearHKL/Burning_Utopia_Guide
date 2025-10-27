@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BPlantSprite : MonoBehaviour
 {
-    private bool isFunc = true;
+    public bool isFunc = true;
 
     public void trigger(SceneOneManager sm)
     {

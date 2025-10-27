@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BPlaySprite : MonoBehaviour
+public class BStirTwo : MonoBehaviour
 {
     public bool isFunc = true;
 
@@ -14,7 +14,7 @@ public class BPlaySprite : MonoBehaviour
             List<string> startDialogs;
             startDialogs = new List<string> {
                 "",
-                "精灵不会出精灵国，它们的魔法除了附在糖果上，没其它办法带走，但现在它们很久没吃到带快乐魔法的糖果了"
+                "它和负责搅拌糖浆的精灵发生了矛盾，如果能给搅拌糖浆的精灵特别的鲜花新品的话，搅拌糖浆的精灵会很开心，包装的精灵会在你修复流水线后给你有魔法的糖果",
             };
             dm.ShowDialog(startDialogs);
         }

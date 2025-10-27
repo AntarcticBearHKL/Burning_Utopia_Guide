@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class GameIcon : MonoBehaviour
+public class WechatIcon : MonoBehaviour
 {
     private float lastClickTime;
     private const float doubleClickThreshold = 0.3f;
+
+    public GameObject UI;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class GameIcon : MonoBehaviour
         float timeSinceLastClick = Time.time - lastClickTime;
         if (timeSinceLastClick <= doubleClickThreshold)
         {
-            SceneManager.LoadScene("Start");
+            UI.SetActive(true);
         }
         lastClickTime = Time.time;
     }

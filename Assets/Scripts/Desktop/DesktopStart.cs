@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DesktopStart : MonoBehaviour
 {
+    public GameObject sm;
     private Animator animator;
 
     void Start()
@@ -30,7 +31,15 @@ public class DesktopStart : MonoBehaviour
         if (animator != null)
         {
             yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-            animator.gameObject.SetActive(false);
+        }
+
+        if (sm != null)
+        {
+            DesManager manager = sm.GetComponent<DesManager>();
+            if (manager != null)
+            {
+                manager.Step2();
+            }
         }
     }
 }

@@ -5,10 +5,11 @@ using UnityEngine.UIElements;
 
 public class DesLogin : MonoBehaviour
 {
+    public GameObject sm;
+    
     private UIDocument uiDocument;
     private VisualElement buttonConfirm;
 
-    // Start is called before the first frame update
     void Start()
     {
         uiDocument = GetComponent<UIDocument>();
@@ -17,7 +18,17 @@ public class DesLogin : MonoBehaviour
             buttonConfirm = uiDocument.rootVisualElement.Q<VisualElement>("buttonConfirm");
             if (buttonConfirm != null)
             {
-                buttonConfirm.RegisterCallback<ClickEvent>(evt => uiDocument.rootVisualElement.style.display = DisplayStyle.None);
+                buttonConfirm.RegisterCallback<ClickEvent>(evt =>
+                {
+                    if (sm != null)
+                    {
+                        DesManager manager = sm.GetComponent<DesManager>();
+                        if (manager != null)
+                        {
+                            manager.Step3();
+                        }
+                    }
+                });
             }
         }
     }

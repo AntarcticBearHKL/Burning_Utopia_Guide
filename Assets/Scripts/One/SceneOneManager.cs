@@ -17,6 +17,8 @@ public class SceneOneManager : MonoBehaviour
 
     public int itemChoose = -1;
 
+    public bool princessHitted = false;
+
     public bool finalGateOpen = false;
 
     void Start()
