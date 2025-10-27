@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BItemOne : MonoBehaviour
 {
-    public SceneManager sm;
+    public SceneOneManager sm;
 
     void OnMouseDown()
     {

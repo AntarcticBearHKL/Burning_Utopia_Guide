@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 550304443}
   - component: {fileID: 550304445}
   m_Layer: 0
-  m_Name: Dialog
+  m_Name: DialogUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 550304442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a63449172aef84abfec19b5a55525a, type: 3}
+  m_Script: {fileID: 11500000, guid: c43ac6049cf4bbe40b182f7b6263e2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   labelName: DialogLabel
@@ -814,13 +814,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1036497593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ad45f3e366f514487d03e1edece958, type: 3}
+  m_Script: {fileID: 11500000, guid: 80d4a38cb253a9840aed997a2373fc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentPosition: {fileID: 0}
-  dialogManager: {fileID: 550304442}
-  cameraController: {fileID: 830626666}
-  uiManager: {fileID: 1727881479}
+  mainCamera: {fileID: 830626661}
+  dialogUI: {fileID: 550304442}
+  itemUI: {fileID: 1727881479}
   i1g: 0
   i2g: 0
   i3g: 0
@@ -954,9 +953,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1727881481}
   - component: {fileID: 1727881480}
-  - component: {fileID: 1727881482}
+  - component: {fileID: 1727881483}
   m_Layer: 0
-  m_Name: UI
+  m_Name: ItemUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -993,7 +992,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1727881482
+--- !u!114 &1727881483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1002,7 +1001,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1727881479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 461bb427b99c3864db2138f077a41c30, type: 3}
+  m_Script: {fileID: 11500000, guid: 982ac86e3c11b9a4dbbb463b0500530d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sm: {fileID: 1036497594}
@@ -1212,8 +1211,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 1036497595}
   - {fileID: 830626664}
-  - {fileID: 1727881481}
   - {fileID: 550304444}
+  - {fileID: 1727881481}
   - {fileID: 1227231152}
   - {fileID: 283783146}
   - {fileID: 1739922865}

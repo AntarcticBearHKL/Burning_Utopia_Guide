@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movePoint : MonoBehaviour
 {
-    public SceneManager sm;
+    public SceneOneManager sm;
     private GameObject sprite1;
     private GameObject sprite2;
     public bool hideFirstSprite = true;

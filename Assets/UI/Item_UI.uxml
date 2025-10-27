@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:VisualElement style="flex-grow: 1; height: 10%;" />
+            <ui:VisualElement name="Root1" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/UI/Item/%E8%B5%84%E6%BA%90%2017@5x.png?fileID=2800000&amp;guid=bde1564d359b31349a6a8a0fde76be78&amp;type=3#资源 17@5x&quot;); width: 60px; height: 50px; position: relative; top: auto; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                <ui:VisualElement name="R1B" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0.16); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; overflow: visible; position: absolute; width: 70%; height: 70%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; left: 15%; top: 15%; right: 0; bottom: 0; align-items: auto; justify-content: flex-start; align-self: auto; opacity: 0;" />
+                <ui:VisualElement name="R1F" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/Scenes/One/%E6%9E%9C%E5%AE%9E1.png?fileID=2800000&amp;guid=c7655b6b50a1d3c42a9a26a17a94b135&amp;type=3#果实1&quot;); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; overflow: visible; opacity: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Root2" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/UI/Item/%E8%B5%84%E6%BA%90%2018@5x.png?fileID=2800000&amp;guid=6848bda282a485c47907e3c48f8c17fb&amp;type=3#资源 18@5x&quot;); width: 60px; position: relative; height: 50px; top: auto; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+                <ui:VisualElement name="R2B" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0.16); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; position: absolute; left: 15%; top: 15%; width: 70%; height: 70%; opacity: 0;" />
+                <ui:VisualElement name="R2F" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/Scenes/One/%E6%9E%9C%E5%AE%9E1.png?fileID=2800000&amp;guid=c7655b6b50a1d3c42a9a26a17a94b135&amp;type=3#果实1&quot;); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; opacity: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Root3" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/UI/Item/%E8%B5%84%E6%BA%90%2019@5x.png?fileID=2800000&amp;guid=804cee612eb7bc34ab67634a8b4b2284&amp;type=3#资源 19@5x&quot;); width: 60px; position: relative; top: auto; bottom: auto; height: 50px; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+                <ui:VisualElement name="R3B" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0.16); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; position: absolute; left: 15%; top: 15%; width: 70%; height: 70%; opacity: 0;" />
+                <ui:VisualElement name="R3F" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/Scenes/One/%E6%9E%9C%E5%AE%9E1.png?fileID=2800000&amp;guid=c7655b6b50a1d3c42a9a26a17a94b135&amp;type=3#果实1&quot;); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; opacity: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Root4" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/UI/Item/%E8%B5%84%E6%BA%90%2020@5x.png?fileID=2800000&amp;guid=2ee7fc41dd6796244a4de52c46ef9167&amp;type=3#资源 20@5x&quot;); width: 60px; position: relative; top: auto; height: 50px; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+                <ui:VisualElement name="R4B" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0.16); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; position: absolute; left: 15%; top: 15%; width: 70%; height: 70%; opacity: 0;" />
+                <ui:VisualElement name="R4F" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/Scenes/One/%E6%9E%9C%E5%AE%9E1.png?fileID=2800000&amp;guid=c7655b6b50a1d3c42a9a26a17a94b135&amp;type=3#果实1&quot;); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; opacity: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; height: 10%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

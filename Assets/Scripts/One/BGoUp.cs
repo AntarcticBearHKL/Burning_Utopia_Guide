@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class BGoUp : MonoBehaviour
 {
-    public SceneManager sm;
+    public SceneOneManager sm;
 
     void OnMouseDown()
     {
-        if (sm != null && sm.cameraController != null)
+        if (sm != null && sm.mainCamera != null)
         {
-            CameraController controller = sm.cameraController.GetComponent<CameraController>();
+            CameraController controller = sm.mainCamera.GetComponent<CameraController>();
             if (controller != null)
             {
                 controller.SetPositionY2();

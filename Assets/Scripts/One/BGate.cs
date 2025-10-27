@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BGate : MonoBehaviour
 {
-    public bool isFunc = true;
+    private bool isFunc = true;
 
-    public void trigger(SceneManager sm)
+    public void trigger(SceneOneManager sm)
     {
-        dialogManager dm = sm.dialogManager.GetComponent<dialogManager>();
+        dialogUI dm = sm.dialogUI.GetComponent<dialogUI>();
         if (dm != null)
         {
             List<string> startDialogs;
