@@ -32,4 +32,21 @@ public class CameraController : MonoBehaviour
     {
         transform.position = new Vector3(transform.position.x, yValue3, transform.position.z);
     }
+
+    public IEnumerator MoveBetweenYValues(float speedToY3, float speedToY1)
+    {
+        // 从当前位置移动到 yValue3
+        while (Mathf.Abs(transform.position.y - yValue3) > 0.01f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, yValue3, transform.position.z), speedToY3 * Time.deltaTime);
+            yield return null;
+        }
+
+        // 从 yValue3 移动回 yValue1
+        while (Mathf.Abs(transform.position.y - yValue1) > 0.01f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, yValue1, transform.position.z), speedToY1 * Time.deltaTime);
+            yield return null;
+        }
+    }
 }

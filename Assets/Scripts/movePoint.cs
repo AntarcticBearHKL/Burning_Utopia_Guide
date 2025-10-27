@@ -35,8 +35,32 @@ public class movePoint : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (sm != null && sm.IsDialogActive())
+        {
+            return;
+        }
+
         sm.UpdatePosition(this.gameObject);
         Move();
+
+        var components = GetComponents<MonoBehaviour>();
+        foreach (var comp in components)
+        {
+            var type = comp.GetType();
+            var isFuncField = type.GetField("isFunc");
+            if (isFuncField != null && isFuncField.FieldType == typeof(bool))
+            {
+                bool isFunc = (bool)isFuncField.GetValue(comp);
+                if (isFunc)
+                {
+                    var triggerMethod = type.GetMethod("trigger");
+                    if (triggerMethod != null)
+                    {
+                        triggerMethod.Invoke(comp, new object[] { sm });
+                    }
+                }
+            }
+        }
     }
 
     public void Move()

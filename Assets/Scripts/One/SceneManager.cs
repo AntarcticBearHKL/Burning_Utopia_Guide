@@ -6,8 +6,10 @@ public class SceneManager : MonoBehaviour
 {
     public GameObject currentPosition;
     public GameObject dialogManager;
+    public CameraController cameraController;
+    public GameObject uiManager;
 
-    private bool finalGoal = false;
+    public bool finalGateOpen = false;
 
     void Start()
     {
@@ -17,8 +19,7 @@ public class SceneManager : MonoBehaviour
             if (dm != null)
             {
                 List<string> startDialogs = new List<string> { 
-                    "国王听说精灵的魔法能长生不老，但精灵除了让人开心，什么也不会", 
-                    "公主现在怎么样呢" 
+                    "我是勇者，要得到精灵的魔法，救出公主", 
                 };
                 dm.ShowDialog(startDialogs);
             }
@@ -46,5 +47,18 @@ public class SceneManager : MonoBehaviour
             }
         }
         currentPosition = newPosition;
+    }
+
+    public bool IsDialogActive()
+    {
+        if (dialogManager != null)
+        {
+            dialogManager dm = dialogManager.GetComponent<dialogManager>();
+            if (dm != null)
+            {
+                return dm.IsDialogActive();
+            }
+        }
+        return false;
     }
 }

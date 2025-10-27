@@ -77,4 +77,9 @@ public class dialogManager : MonoBehaviour
             }
         }
     }
+
+    public bool IsDialogActive()
+    {
+        return uiDocument != null && uiDocument.rootVisualElement.style.display == DisplayStyle.Flex;
+    }
 }
