@@ -6,13 +6,14 @@ public class BItemOne : MonoBehaviour
 {
     public SceneManager sm;
 
-    void Start()
+    void OnMouseDown()
     {
-        
+        if (sm != null)
+        {
+            sm.GetItem(1);
+        }
+
+        gameObject.SetActive(false);
     }
 
-    void Update()
-    {
-        
-    }
 }
