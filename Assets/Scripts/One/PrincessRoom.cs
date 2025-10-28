@@ -13,10 +13,10 @@ public class PrincessRoom : MonoBehaviour
         {
             if(sm.i1g && sm.itemChoose == 0)
             {
-                List<string> startDialogs;
-                startDialogs = new List<string> {
-                    "",
-                    "扔向公主房间的窗户"
+                List<DialogData> startDialogs;
+                startDialogs = new List<DialogData> {
+                    new DialogData("", null, 0, null, 0),
+                    new DialogData("", null, 0, null, 0),
                 };
                 dm.ShowDialog(startDialogs);
                 sm.princessHitted = true;

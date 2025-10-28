@@ -6,16 +6,25 @@ public class BPlantSprite : MonoBehaviour
 {
     public bool isFunc = true;
 
+    public Sprite speo;
+    public Sprite spec;
+
     public void trigger(SceneOneManager sm)
     {
         dialogUI dm = sm.dialogUI.GetComponent<dialogUI>();
         if (dm != null)
         {
-            List<string> startDialogs;
-            startDialogs = new List<string> {
-                "",
-                "神树的果实是制作糖果的原料，它会结好几种不同的果实，大部分精灵都住在神树里",
-                "精灵会将部分果实用于播种，希望能培养出神奇的植物，做更多味道的糖果。它们最近培育出了一种特别的鲜花。提醒你可以采集试一试",
+            List<DialogData> startDialogs;
+            startDialogs = new List<DialogData> {
+                new DialogData("", null, 0, null, 0),
+                new DialogData("桑你好，你是想问怎么得到带精灵魔法的糖果吗？", null, 0.65f, spec, 0.74f),
+                new DialogData("！你怎么知道！", speo, 0.65f, spec, 0.74f),
+                new DialogData("播种的过程有时很枯燥，所以总会思考更多", null, 0.65f, spec, 0.74f),
+                new DialogData("你想寻找的糖果，精灵制作的糖果，都来自神树的果实", null, 0.65f, spec, 0.74f),
+                new DialogData("神树孕育一切，为精灵提供居所、提供食物", null, 0.65f, spec, 0.74f),
+                new DialogData("想要得到带精灵魔法的糖果，就要到一切的源头……", null, 0.65f, spec, 0.74f),
+                new DialogData("一切的源头，是指神树？", speo, 0.65f, null, 0.74f),
+                new DialogData("神树，和生产糖果的流水线", null, 0.65f, spec, 0.74f),
             };
             dm.ShowDialog(startDialogs);
         }

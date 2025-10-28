@@ -11,19 +11,19 @@ public class BGate : MonoBehaviour
         dialogUI dm = sm.dialogUI.GetComponent<dialogUI>();
         if (dm != null)
         {
-            List<string> startDialogs;
+            List<DialogData> startDialogs;
             if (sm.finalGateOpen)
             {
-                startDialogs = new List<string> {
-                    "",
-                    "得到魔法糖果后，离开进入下一关"
+                startDialogs = new List<DialogData> {
+                    new DialogData("", null, 0, null, 0),
+                    new DialogData("", null, 0, null, 0),
                 };
             }
             else
             {
-                startDialogs = new List<string> {
-                    "",
-                    "还不能出去，要得到精灵的魔法"
+                startDialogs = new List<DialogData> {
+                    new DialogData("", null, 0, null, 0),
+                    new DialogData("", null, 0, null, 0),
                 };
             }
             dm.ShowDialog(startDialogs);

@@ -11,10 +11,10 @@ public class BStirOne : MonoBehaviour
         dialogUI dm = sm.dialogUI.GetComponent<dialogUI>();
         if (dm != null)
         {
-            List<string> startDialogs;
-            startDialogs = new List<string> {
-                "",
-                "糖果没有魔法是因为流水线上负责施展魔法的小精灵总是不快乐，没办法施展快乐魔法",
+            List<DialogData> startDialogs;
+            startDialogs = new List<DialogData> {
+                new DialogData("", null, 0, null, 0),
+                new DialogData("", null, 0, null, 0),
             };
             dm.ShowDialog(startDialogs);
         }
