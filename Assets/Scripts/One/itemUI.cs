@@ -40,6 +40,23 @@ public class itemUI : MonoBehaviour
         {
             fs[index].style.opacity = 1f;
         }
+
+        if(index == 1)
+        {
+            sm.i1g = true;
+        }
+        else if(index == 2)
+        {
+            sm.i2g = true;
+        }
+        else if(index == 3)
+        {
+            sm.i3g = true;
+        }
+        else if(index == 4)
+        {
+            sm.i4g = true;
+        }
     }
 
     public void ChooseB(int index)

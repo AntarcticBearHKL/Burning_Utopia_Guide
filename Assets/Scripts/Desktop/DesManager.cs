@@ -12,15 +12,27 @@ public class DesManager : MonoBehaviour
     
     private async void Start()
     {
-        if (fade != null)
+        bool back = PlayerPrefs.GetInt("back", 0) == 1;
+        
+        PlayerPrefs.DeleteKey("back");
+        PlayerPrefs.Save();
+        
+        if (back)
         {
-            FadeEffect fadeEffect = fade.GetComponent<FadeEffect>();
-            if (fadeEffect != null)
-            {
-                await fadeEffect.FadeInAsync(1.0f);
-            }
+            Step3();
         }
-        Step1();
+        else
+        {
+            if (fade != null)
+            {
+                FadeEffect fadeEffect = fade.GetComponent<FadeEffect>();
+                if (fadeEffect != null)
+                {
+                    await fadeEffect.FadeInAsync(1.0f);
+                }
+            }
+            Step1();
+        }
     }
 
     public void Step1()
