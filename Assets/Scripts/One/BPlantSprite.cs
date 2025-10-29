@@ -18,7 +18,7 @@ public class BPlantSprite : MonoBehaviour
             startDialogs = new List<DialogData> {
                 new DialogData("", null, 0, null, 0),
                 new DialogData("桑你好，你是想问怎么得到带精灵魔法的糖果吗？", null, 0.65f, spec, 0.74f),
-                new DialogData("！你怎么知道！", speo, 0.65f, spec, 0.74f),
+                new DialogData("！你怎么知道！", speo, 0.65f, null, 0.74f),
                 new DialogData("播种的过程有时很枯燥，所以总会思考更多", null, 0.65f, spec, 0.74f),
                 new DialogData("你想寻找的糖果，精灵制作的糖果，都来自神树的果实", null, 0.65f, spec, 0.74f),
                 new DialogData("神树孕育一切，为精灵提供居所、提供食物", null, 0.65f, spec, 0.74f),
@@ -36,7 +36,7 @@ public class BPlantSprite : MonoBehaviour
                 new DialogData("我们最近培养出了一种“特别的鲜花”，它可以……", null, 0.65f, spec, 0.74f),
                 new DialogData("可以？", speo, 0.65f, null, 0.74f),
                 new DialogData("咳咳，还没研究出来它可以干什么，但可以先给你欣赏一下", null, 0.65f, spec, 0.74f),
-                new DialogData("嗯，可以先向我显摆一下", null, 0.65f, spec, 0.74f),
+                new DialogData("嗯，可以先向我显摆一下", speo, 0.65f, null, 0.74f),
 
                 new DialogData("----(不如带上一朵特别的鲜花吧)----", null, 0.65f, null, 0.74f),
             };

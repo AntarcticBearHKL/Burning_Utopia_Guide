@@ -1,5 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/Desktop/%E7%AA%97%E5%8F%A3/%E5%BE%AE%E4%BF%A1%E7%AA%97%E5%8F%A3/%E5%BE%AE%E4%BF%A1%E7%AA%97%E5%8F%A3.png?fileID=2800000&amp;guid=988140622436d1e4eb5bab0f6fca3d39&amp;type=3#微信窗口&quot;); position: absolute; width: 80%; height: 80%; left: 10%; top: 10%;" />
-    <ui:ListView name="ListView" style="height: 66%; width: 23%; left: 11.5%; top: 22%;" />
+    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Arts/Desktop/%E7%AA%97%E5%8F%A3/%E5%BE%AE%E4%BF%A1%E7%AA%97%E5%8F%A3/%E5%BE%AE%E4%BF%A1%E7%AA%97%E5%8F%A3.png?fileID=2800000&amp;guid=988140622436d1e4eb5bab0f6fca3d39&amp;type=3#微信窗口&quot;); position: absolute; width: 80%; height: 80%; left: 10%; top: 10%;">
+        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choose1" style="position: absolute; width: 60%; left: 36%; top: 73.5%;" />
+        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choose2" style="position: absolute; width: 60%; left: 36%; top: 81.5%;" />
+        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choose3" style="position: absolute; width: 60%; left: 36%; top: 89.5%;" />
+    </ui:VisualElement>
+    <ui:ListView name="friendList" style="height: 66%; width: 23%; left: 11.5%; top: 22%;" />
+    <ui:ListView name="chat" style="height: 45.5%; width: 52%; left: 37%; top: 21.5%; position: absolute;" />
     <ui:VisualElement name="CloseButton" style="flex-grow: 1; position: absolute; width: 2.3%; height: 2.5%; background-image: url(&quot;project://database/Assets/Arts/Desktop/%E7%AA%97%E5%8F%A3/%E5%85%B3%E9%97%AD%E6%8C%89%E9%92%AE/%E8%B5%84%E6%BA%90%2023@5x.png?fileID=2800000&amp;guid=358d200606be9834cb895446a6e24653&amp;type=3#资源 23@5x&quot;); left: 87%; top: 11%;" />
 </ui:UXML>

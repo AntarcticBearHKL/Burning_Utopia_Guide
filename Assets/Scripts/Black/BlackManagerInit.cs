@@ -1,23 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class BlackManagerInit : MonoBehaviour
 {
-    public GameObject BlackUI;
+    public GameObject videoPlayerObject;
+    private VideoPlayer videoPlayer;
 
     void Start()
     {
-        if (BlackUI != null)
+        if (videoPlayerObject != null)
         {
-            BlackUI blackUIComponent = BlackUI.GetComponent<BlackUI>();
-            if (blackUIComponent != null)
+            videoPlayer = videoPlayerObject.GetComponent<VideoPlayer>();
+            
+            if (videoPlayer != null)
             {
-                List<string> contents = new List<string> { 
-                    "hello", "world" 
-                };
-                blackUIComponent.ShowContent(contents, "Desktop");
+                videoPlayer.loopPointReached += OnVideoFinished;
+                
+                videoPlayer.Play();
             }
+            else
+            {
+                Debug.LogError("在指定的GameObject上未找到VideoPlayer组件！");
+            }
+        }
+        else
+        {
+            Debug.LogError("未分配VideoPlayer所在的GameObject，请在Inspector中分配！");
+        }
+    }
+
+    void OnVideoFinished(VideoPlayer vp)
+    {
+        SceneManager.LoadScene("Desktop");
+    }
+
+    void OnDestroy()
+    {
+        if (videoPlayer != null)
+        {
+            videoPlayer.loopPointReached -= OnVideoFinished;
         }
     }
 }
