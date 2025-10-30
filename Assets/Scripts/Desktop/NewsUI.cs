@@ -23,6 +23,8 @@ public class NewsUI : MonoBehaviour
         if (n2 != null) newsList.Add(n2);
         var n3 = doc.rootVisualElement.Q<VisualElement>("N3");
         if (n3 != null) newsList.Add(n3);
+        var n4 = doc.rootVisualElement.Q<VisualElement>("N4");
+        if (n3 != null) newsList.Add(n4);
         prevButton = doc.rootVisualElement.Q<VisualElement>("Prev");
         nextButton = doc.rootVisualElement.Q<VisualElement>("Next");
         if (closeElement == null) return;

@@ -34,7 +34,7 @@ public class BlackManagerInit : MonoBehaviour
 
     void OnVideoFinished(VideoPlayer vp)
     {
-        SceneManager.LoadScene("Desktop");
+        SceneManager.LoadScene("Intro");
     }
 
     void OnDestroy()

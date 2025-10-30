@@ -34,7 +34,8 @@ public class BNextGarden : MonoBehaviour
                 List<DialogData> startDialogs;
                 startDialogs = new List<DialogData> {
                     new DialogData("", null, 0, null, 0),
-                    new DialogData("----当旋律错乱，舞步也失了节拍；唯有让音与心相契，舞会方能再度和鸣。----", null, 0.65f, null, 0.74f),
+                    new DialogData("----当旋律错乱，舞步也失了节拍；----", null, 0.65f, null, 0.74f),
+                    new DialogData("----拖动女舞者，让音与心相契，舞会方能再度和鸣。----", null, 0.65f, null, 0.74f),
                 };
                 dm.ShowDialog(startDialogs);
             }

@@ -31,7 +31,7 @@ public class BPlantSprite : MonoBehaviour
                 new DialogData("当然，快乐，也是我们的工作！", null, 0.65f, spec, 0.74f),
                 new DialogData("但是，就像总有人不想工作一样，也有精灵不想快乐", null, 0.65f, spec, 0.74f),
                 new DialogData("如果我每天像你一样种地的话，我也快乐不起来", speo, 0.65f, null, 0.74f),
-                new DialogData("我做得是非常神圣的工作！精灵将部分神树的果实用于播种", null, 0.65f, spec, 0.74f),
+                new DialogData("我做的是非常神圣的工作！精灵将部分神树的果实用于播种", null, 0.65f, spec, 0.74f),
                 new DialogData("这些种子能长成各种各样神奇的植物，做不同口味的糖果！", null, 0.65f, spec, 0.74f),
                 new DialogData("我们最近培养出了一种“特别的鲜花”，它可以……", null, 0.65f, spec, 0.74f),
                 new DialogData("可以？", speo, 0.65f, null, 0.74f),

@@ -20,7 +20,7 @@ public class BDownStair : MonoBehaviour
                 List<DialogData> startDialogs;
                 startDialogs = new List<DialogData> {
                     new DialogData("", null, 0, null, 0),
-                    new DialogData("----再去找人聊一聊把----", null, 0.65f, null, 0.74f),
+                    new DialogData("----再去找人聊一聊吧----", null, 0.65f, null, 0.74f),
                 };
                 dm.ShowDialog(startDialogs);
             }
