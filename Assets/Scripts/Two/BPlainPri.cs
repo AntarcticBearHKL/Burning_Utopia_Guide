@@ -12,6 +12,8 @@ public class BPlainPri : MonoBehaviour
     public Sprite speo;
     public Sprite spec;
 
+    public GameObject kingg;
+
     public void trigger(STManager sm)
     {
         dialogUI dm = sm.DialogUI.GetComponent<dialogUI>();
@@ -55,19 +57,18 @@ public class BPlainPri : MonoBehaviour
                     new DialogData("勇者大人", null, 0.65f, spec, 0.64f),
                 };
                 dm.ShowDialog(startDialogs);
-                
+                change = true;
+            }
+            else
+            {
                 if (transform.childCount > 0)
                 {
                     SpriteRenderer sr = transform.GetChild(0).GetComponent<SpriteRenderer>();
                     if (sr != null && nex != null)
                     {
                         sr.sprite = nex;
-                        change = true;
                     }
                 }
-            }
-            else
-            {
                 List<DialogData> startDialogs;
                 startDialogs = new List<DialogData> {
                     new DialogData("", null, 0, null, 0),
@@ -76,6 +77,8 @@ public class BPlainPri : MonoBehaviour
                     new DialogData("舞会接下来的时间，请尽量留在花园吧", null, 0.65f, nex, 0.64f),
                 };
                 dm.ShowDialog(startDialogs);
+
+                kingg.SetActive(true);
             }
         }
     }

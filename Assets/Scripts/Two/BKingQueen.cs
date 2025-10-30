@@ -13,6 +13,8 @@ public class BKingQueen : MonoBehaviour
 
     public bool stop = false;
 
+    public GameObject princessssss;
+
     public void trigger(STManager sm)
     {
         if(stop)
@@ -32,6 +34,7 @@ public class BKingQueen : MonoBehaviour
             dm.ShowDialog(startDialogs);
             
             stop = true;
+            princessssss.SetActive(false);
         }
     }
 }
