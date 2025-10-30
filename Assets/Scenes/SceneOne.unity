@@ -312,23 +312,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.17
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -6.92
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 28.25
+      value: 26.57
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -336,7 +336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99128664
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -348,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.13172287
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -360,16 +360,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -15.138
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7367979322726693165, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9a7e16f141daad846b80b7e3652b1bde, type: 3}
+      objectReference: {fileID: 21300000, guid: 1e8917247ba475a4ca0c69e6ea86c7c9, type: 3}
+    - target: {fileID: 7367979322726693165, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e5991353be610e4aa803098f0addc68, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1203,15 +1207,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.17
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1255,12 +1259,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6992245513912507141, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7367979322726693165, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 9a7e16f141daad846b80b7e3652b1bde, type: 3}
+      objectReference: {fileID: 21300000, guid: 3916b1f63809ade4a8caf2444aebcaf5, type: 3}
+    - target: {fileID: 7367979322726693165, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e5991353be610e4aa803098f0addc68, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1488,7 +1496,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 23
-  m_Sprite: {fileID: 21300000, guid: f621c0eb4aba0fa47be369fdbd2a9cbe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 065005e1ac2c4cc47a8a0be48d235e32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1547,6 +1555,7 @@ GameObject:
   - component: {fileID: 830626662}
   - component: {fileID: 830626665}
   - component: {fileID: 830626666}
+  - component: {fileID: 830626667}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -1571,8 +1580,8 @@ Camera:
   m_GameObject: {fileID: 830626661}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1687,6 +1696,18 @@ MonoBehaviour:
   yValue1: -16.3
   yValue2: -0.4
   yValue3: 16.3
+--- !u!114 &830626667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830626661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf0882700dfb5e49b1a0c5a1a0e0d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &852319385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,6 +2308,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 3916b1f63809ade4a8caf2444aebcaf5, type: 3}
+    - target: {fileID: 7367979322726693165, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e5991353be610e4aa803098f0addc68, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2748,7 +2773,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 23
-  m_Sprite: {fileID: 21300000, guid: f621c0eb4aba0fa47be369fdbd2a9cbe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 065005e1ac2c4cc47a8a0be48d235e32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2832,7 +2857,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 23
-  m_Sprite: {fileID: 21300000, guid: f621c0eb4aba0fa47be369fdbd2a9cbe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 065005e1ac2c4cc47a8a0be48d235e32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2930,6 +2955,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 3916b1f63809ade4a8caf2444aebcaf5, type: 3}
+    - target: {fileID: 7367979322726693165, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4e5991353be610e4aa803098f0addc68, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3402,7 +3431,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 23
-  m_Sprite: {fileID: 21300000, guid: f621c0eb4aba0fa47be369fdbd2a9cbe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 065005e1ac2c4cc47a8a0be48d235e32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3509,7 +3538,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 23
-  m_Sprite: {fileID: 21300000, guid: f621c0eb4aba0fa47be369fdbd2a9cbe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 065005e1ac2c4cc47a8a0be48d235e32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3857,7 +3886,7 @@ PrefabInstance:
     - target: {fileID: 7367979322726693165, guid: 0991ed8a7efac1d47aa9e74a1c39094e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f621c0eb4aba0fa47be369fdbd2a9cbe, type: 3}
+      objectReference: {fileID: 21300000, guid: 065005e1ac2c4cc47a8a0be48d235e32, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

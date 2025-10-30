@@ -17,8 +17,8 @@ public class BMary : MonoBehaviour
             List<DialogData> startDialogs;
             startDialogs = new List<DialogData> {
                 new DialogData("", null, 0, null, 0),
-                new DialogData("您是不是第一次参加舞会，骑士先生？", speo, 0.65f, null, 0.64f),
-                new DialogData("是，但您是怎么看出来的？", null, 0.65f, spec, 0.64f),
+                new DialogData("您是不是第一次参加舞会，骑士先生？", null, 0.65f, spec, 0.64f),
+                new DialogData("是，但您是怎么看出来的？", speo, 0.65f, null, 0.64f),
                 new DialogData("您一句话都没说，就这么径直地走过来了呀！", null, 0.65f, spec, 0.64f),
                 new DialogData("要请女士跳舞的话，得有一套流程才行", null, 0.65f, spec, 0.64f),
                 new DialogData("啊……我没有……非常抱歉，我是来找公主殿下的", speo, 0.65f, null, 0.64f),
